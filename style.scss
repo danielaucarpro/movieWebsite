@@ -1,0 +1,72 @@
+body {
+    background-color: #282828 !important;
+}
+
+.header{
+    color: white !important;
+}
+
+#mainMenu{
+    color: white !important;
+}
+
+.carousel-slide {
+    background-color: black;
+}
+
+.container-movie {
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+}
+
+.category {
+    margin-left: 3rem !important;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.row {
+    margin-left: 3rem !important;
+    .col {
+        background-color: gray;
+        border-radius: 2px;
+        margin: 0.15rem;
+        width: 20rem;
+        height: 20rem;
+        &:hover {
+            background-color: green;
+            transform: scale(1.5);
+            transition: .5s;
+        }
+    }
+}
+
+.bell {
+    width: 20px;
+    height: 20px;
+}
+
+/* Footer */
+#socialMedia{
+    display: flex;
+    padding: 3em;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+}
+
+#footer-name{
+    margin-top: 20px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#socialMedia a{
+    margin-left: 10px;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+}
