@@ -2,12 +2,40 @@ body {
   background-color: #282828 !important;
 }
 
-.header {
-  color: white !important;
+#navbar.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background-color: #282828 !important;
 }
 
-#mainMenu {
+#navbar a.navbar-brand {
+  color: white;
+}
+#navbar a.nav-link.active {
+  color: white;
+}
+
+a#navbarDropdown.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+input.form-control.me-2 {
+  background-color: #282828;
+  color: white;
+}
+
+.btn-outline-success {
   color: white !important;
+  border-color: white !important;
+}
+.btn-outline-success:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+button.navbar-toggler {
+  border: none;
+}
+button.navbar-toggler .navbar-toggler-icon {
+  background-image: url("img/togglerIcon.png");
 }
 
 .carousel-slide {
@@ -18,28 +46,26 @@ body {
   margin-top: 2rem;
   margin-left: 2.5rem;
 }
-
-.category {
-  margin-left: 3rem !important;
-  color: white;
-  font-size: 2rem;
-  margin-top: 1.5rem;
-}
-
-.row {
+.container-movie .row {
   margin-left: 3rem !important;
 }
-.row .col {
+.container-movie .col {
   background-color: gray;
   border-radius: 2px;
   margin: 0.15rem;
   width: 20rem;
   height: 20rem;
 }
-.row .col:hover {
-  background-color: green;
+.container-movie .col:hover {
   transform: scale(1.5);
   transition: 0.5s;
+}
+
+.category {
+  margin-left: 3rem !important;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .bell {
@@ -76,8 +102,16 @@ body {
   color: white;
 }
 
-.col {
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), red) !important;
+.container .col {
+  width: 160%;
+}
+.container .col-poster {
+  text-align: center;
+  background-color: gray;
+  border-radius: 2px;
+  margin: 0.15rem;
+  width: 100%;
+  height: 20rem;
 }
 
 .details {

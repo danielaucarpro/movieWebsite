@@ -2,12 +2,42 @@ body {
     background-color: #282828 !important;
 }
 
-.header{
-    color: white !important;
+#navbar.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: #282828 !important;
 }
 
-#mainMenu{
+#navbar {
+    a.navbar-brand {
+        color: white;
+    }
+    a.nav-link.active {
+        color: white;
+    }
+}
+
+a#navbarDropdown.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+input.form-control.me-2 {
+    background-color: #282828;
+    color: white;
+}
+
+.btn-outline-success {
     color: white !important;
+    border-color: white !important;
+    &:hover {
+        background-color: white !important;
+        color: black !important;
+    }
+}
+
+button.navbar-toggler {
+    border: none;
+    .navbar-toggler-icon {
+        background-image: url("img/togglerIcon.png");
+    }
 }
 
 .carousel-slide {
@@ -17,6 +47,25 @@ body {
 .container-movie {
     margin-top: 2rem;
     margin-left: 2.5rem;
+    .row {
+        margin-left: 3rem !important;
+    }
+
+    .col {
+        // background-color: gray;
+        border-radius: 2px;
+        margin: 0.2rem;
+        width: 20rem;
+        height: 20rem;
+        &:hover {
+            // background-color: green;
+            transform: scale(1.5);
+            transition: 0.5s;
+        }
+        .img{
+            height: 20rem;
+        }
+    }
 }
 
 .category {
@@ -26,29 +75,17 @@ body {
     margin-top: 1.5rem;
 }
 
-.row {
-    margin-left: 3rem !important;
-    .col {
-        background-color: gray;
-        border-radius: 2px;
-        margin: 0.15rem;
-        width: 20rem;
-        height: 20rem;
-        &:hover {
-            background-color: green;
-            transform: scale(1.5);
-            transition: .5s;
-        }
-    }
-}
-
 .bell {
     width: 20px;
     height: 20px;
 }
 
+#action{
+    color: white;
+}
+
 /* Footer */
-#socialMedia{
+#socialMedia {
     display: flex;
     padding: 3em;
     align-items: center;
@@ -56,7 +93,7 @@ body {
     background-color: #282828;
 }
 
-#footer-name{
+#footer-name {
     margin-top: 20px;
     margin-right: 20px;
     align-items: center;
@@ -64,7 +101,7 @@ body {
     color: white;
 }
 
-#socialMedia a{
+#socialMedia a {
     margin-left: 10px;
     font-size: 1em;
     color: white;
