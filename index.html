@@ -67,26 +67,30 @@
                             </ul>
                         </li>
                     </ul>
+                    <!-- SEARCH -->
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input id="search" class="form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search" value="">
+                        <button onclick="addIDToURL()" class="btn btn-outline-success" type="submit"><a
+                                id="link-btn" href="./search.html">Search</a></button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- SLIDE SHOW -->
     <div class="container">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
+            <div id="img-carousel-container" class="carousel-inner">
+                <div id="carousel" class="carousel-item active">
+                    <img id="carousel-img" src="./img/1600x320.png" class="d-block w-100" alt="...">
+                </div>
+                <!-- <div class="carousel-item">
                     <img src="./img/1600x320.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="./img/1600x320.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/1600x320.png" class="d-block w-100" alt="...">
-                </div>
+                </div> -->
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="prev">
@@ -119,23 +123,9 @@
                 5 of 8
             </a>
         </div>
-        <p class="category">Originals ></p>
-        <div class="row">
-            <a href="./detail.html" class="col">
-                1 of 8
-            </a>
-            <a href="./detail.html" class="col">
-                2 of 8
-            </a>
-            <a href="./detail.html" class="col">
-                3 of 8
-            </a>
-            <a href="./detail.html" class="col">
-                4 of 8
-            </a>
-            <a href="./detail.html" class="col">
-                5 of 8
-            </a>
+        <p class="category">Popular Movies ></p>
+        <div id="popular" class="row">
+
         </div>
         <p class="category">Action ></p>
         <div id="action" class="row">
@@ -158,7 +148,9 @@
         </div>
     </footer>
     <!-- JS REF -->
+    <script src="./script-search.js"></script>
     <script src="./script.js"></script>
+    
 </body>
 
 </html>

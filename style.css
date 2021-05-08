@@ -23,11 +23,17 @@ input.form-control.me-2 {
 }
 
 .btn-outline-success {
-  color: white !important;
   border-color: white !important;
 }
 .btn-outline-success:hover {
   background-color: white !important;
+  color: black !important;
+}
+.btn-outline-success a {
+  color: white !important;
+  text-decoration: none;
+}
+.btn-outline-success a:hover {
   color: black !important;
 }
 

@@ -71,8 +71,6 @@
 .play-btn {
     background-color: #0f79af;
     margin: 5px;
-    margin-left: 0px;
-    padding: 15px;
     width: 100%;
     height: 100%;
     border-radius: 3px;
@@ -90,9 +88,11 @@
 
 .playText {
     color: white;
-    margin-left: 1rem;
+    // margin-left: 1rem;
     font-size: 1.3rem;
     float: right;
+    margin: 0;
+    padding: .5rem;
 }
 
 .trailer-btn {

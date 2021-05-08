@@ -10,7 +10,7 @@
     <!-- TITLE -->
     <title>CICCC - Movie Gallery - Daniel Aucar Felipe</title>
     <!-- CSS REF -->
-    <link rel="stylesheet" href="./style-detail.css">
+    <link rel="stylesheet" href="./style.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./img/favicon_w.png" type="image/x-icon">
     <!-- BOOTSTRAP -->
@@ -67,6 +67,7 @@
                             </ul>
                         </li>
                     </ul>
+                    <!-- SEARCH -->
                     <form class="d-flex">
                         <input id="search" class="form-control me-2" type="search" placeholder="Search"
                             aria-label="Search" value="">
@@ -77,78 +78,22 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <!-- POSTER -->
-        <div id="poster" class="col-poster">
+    <div class="container-movie">
+        <div id="result" class="row">
 
         </div>
-        <div class="col">
-            <!-- TITLE -->
-            <div id="title-container">
-                <h2 id="title">Movie Title</h2>
+        <!-- FOOTER -->
+        <footer>
+            <div id="socialMedia">
+                <p id="footer-name">Daniel Aucar</p>
+                <a href="https://www.linkedin.com/in/daniel-aucar-felipe-2a922291/">
+                    <img src="./img/linkedin-icon-2.svg.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/daniel-aucar-felipe-2a922291/" target="_blank">Linkedin</a>
             </div>
-            <div class="details-line">
-                <div class="details">time year</div>
-                <!-- <img id="rating" src="./img/rating.png" alt="" srcset=""> -->
-            </div>
-            <div id="overview">
-                <p class="description">Directed by Oscar® Nominee David Fincher,* this "darkest of dark satires"
-                    (Newsweek)
-                    is "an uncompromising American classic" (Rolling Stone) starring Brad Pitt and Edward Norton. Norton
-                    gives a riveting performance as a label-obsessed insomniac on the verge of going postal. Befriending
-                    a
-                    scummy soap salesman (Pitt), he embarks on an existential crusade.</p>
-            </div>
-            <div class="specs">
-                <div class="specs-names">
-                    <p class="specs-title">Directors</p>
-                    <p class="specs-title">Starring</p>
-                    <p class="specs-title">Genres</p>
-                    <p class="specs-title">Subtitles</p>
-                    <p class="specs-title">Audio languages</p>
-                </div>
-                <div class="data-container">
-                    <p class="data">David Fincher</p>
-                    <p class="data">Andi Carnick, Lou Beatty Jr., Rob Lanza</p>
-                    <p class="data">Suspense, Drama</p>
-                    <p class="data">English, Portuguese, more...</p>
-                    <p class="data">English</p>
-                </div>
-            </div>
-            <div class="buttons-contianer">
-                <div class="play-btn">
-                    <p class="playText">Buy Tickets</p>
-                </div>
-            </div>
-        </div>
-        <h5 class="related-title">Related</h5>
-        <div class="related">
-            <div class="col-related">
-
-            </div>
-            <div class="col-related">
-
-            </div>
-            <div class="col-related">
-
-            </div>
-            <div class="col-related">
-
-            </div>
-        </div>
-    </div>
-    <!-- FOOTER -->
-    <footer>
-        <div id="socialMedia">
-            <p id="footer-name">Daniel Aucar</p>
-            <a href="https://www.linkedin.com/in/daniel-aucar-felipe-2a922291/">
-                <img src="./img/linkedin-icon-2.svg.png" alt="">
-            </a>
-            <a href="https://www.linkedin.com/in/daniel-aucar-felipe-2a922291/" target="_blank">Linkedin</a>
-        </div>
-    </footer>
-    <!-- JS REF -->
-    <script src="./script.js"></script>
+        </footer>
+        <!-- JS REF -->
+        <script src="./script-search.js"></script>
 </body>
 
 </html>
