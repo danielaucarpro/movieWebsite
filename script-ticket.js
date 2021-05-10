@@ -27,6 +27,7 @@ const container = document.getElementById('seat-container'); //seat container
 const movieSelect = document.getElementById('movie'); //select tag
 const text = document.getElementById('text'); //display total num and text
 const seats = document.querySelectorAll('.seat'); //all individual seats
+const seatsOccupied = document.querySelectorAll('.seat-occupied');
 const buyBtn = document.getElementById('buy-btn');
 
 let seatsNum = 0;
@@ -81,24 +82,21 @@ window.addEventListener("DOMContentLoaded", function () {
   //get local storage data
   let movieObj = JSON.parse(localStorage.getItem("movieObj"));
   console.log("current local storage is ", movieObj);
-
+  console.log(seats);
   //for the very first time, local storage is null
   if (movieObj === null) {
     localStorage.setItem('movieObj', JSON.stringify({
       movieTitle: movieSelect.value,
       movieId: movieID,
-      movieIndexOfSelectedSeats: [10]
+      movieIndexOfSelectedSeats: []
     }));
   }
-  console.log(seats);
-
   //for the already-booked seats: change the seat color to red
   //add class "seat-occupied"
   //which seats should I change? --> look at the "movieIndexOfSelectedSeats" :D
   //loop all the "seats (defined in line 31)"
-
   //**** only when the index is NOT null
-  if (movieObj.movieIndexOfSelectedSeats !== []) {
+  else if (movieObj.movieIndexOfSelectedSeats !== []) {
     console.log("seats index needs to be kept occupied are... ", movieObj.movieIndexOfSelectedSeats)
     for (let i = 0; i < seats.length; i++) {
       //check all the element of index array and if it is the same index as "seats" index (i), add a class.
@@ -109,7 +107,6 @@ window.addEventListener("DOMContentLoaded", function () {
       })
     }
   }
-
 });
 
 //#2. when the seat is selected 
@@ -164,6 +161,6 @@ function updateSelectedCount() {
 };
 
 buyBtn.addEventListener('click', function () {
-    updateSelectedCount();
-    location.reload();
+  updateSelectedCount();
+  location.reload();
 });
