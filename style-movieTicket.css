@@ -1,0 +1,333 @@
+body {
+  background-color: #282828 !important;
+  font-family: "Roboto", sans-serif !important;
+}
+
+#navbar.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background-color: #282828 !important;
+}
+
+#navbar a.navbar-brand {
+  color: white;
+}
+#navbar a.nav-link.active {
+  color: white;
+}
+
+a#navbarDropdown.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+input.form-control.me-2 {
+  background-color: #282828;
+  color: white;
+}
+
+.btn-outline-success {
+  border-color: white !important;
+}
+.btn-outline-success:hover {
+  background-color: white !important;
+  color: black !important;
+}
+.btn-outline-success a {
+  color: white !important;
+  text-decoration: none;
+}
+.btn-outline-success a:hover {
+  color: black !important;
+}
+
+button.navbar-toggler {
+  border: none;
+}
+button.navbar-toggler .navbar-toggler-icon {
+  background-image: url("img/togglerIcon.png");
+}
+
+#carousel-txt {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#score-text {
+  font-size: 1.5rem;
+}
+
+.container-movie {
+  margin-top: 2rem;
+  margin-left: 2.5rem;
+}
+.container-movie .row {
+  margin-left: 3rem !important;
+}
+.container-movie .col {
+  border-radius: 2px;
+  margin: 0.2rem;
+  width: 20rem;
+  height: 20rem;
+}
+.container-movie .col:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+.container-movie .col .img {
+  width: 13rem;
+  height: 20rem;
+}
+
+.category {
+  margin-left: 3rem !important;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.bell {
+  width: 20px;
+  height: 20px;
+}
+
+#action {
+  color: white;
+}
+
+/* Footer */
+#socialMedia {
+  display: flex;
+  padding: 3em;
+  align-items: center;
+  justify-content: center;
+  background-color: #282828;
+}
+
+#footer-name {
+  margin-top: 20px;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#socialMedia a {
+  margin-left: 10px;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  text-align: center;
+  font-family: "Roboto", sans-serif !important;
+  background-color: #19191b;
+}
+
+#choose-movie {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+#choose-movie #choose-text {
+  font-size: 16pt;
+  color: white;
+}
+
+#movie-container {
+  text-align: center;
+}
+
+#movie {
+  border: 0;
+  border-radius: 5px;
+  font-size: 12pt;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+#movie .poster {
+  width: 13rem;
+  height: 20rem;
+}
+#movie .movieTitle {
+  color: white;
+  margin-bottom: 0.1rem;
+}
+
+.text-movie {
+  margin-left: 1rem;
+}
+.text-movie .runtime {
+  font-size: 1.05rem;
+  color: #8197a2;
+}
+.text-movie .overview {
+  margin: 0rem 30rem;
+  font-size: 1.3rem;
+  color: white;
+}
+
+#legend {
+  margin-top: 20px;
+  margin-right: 50px;
+  display: inline-block;
+  justify-content: space-between;
+}
+#legend li {
+  margin: 1rem;
+  display: inline-block;
+  list-style: none;
+}
+#legend li .text-legend {
+  color: #8197a2;
+  margin-left: 5px;
+}
+
+.seat {
+  float: left;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  padding: auto;
+  border-radius: 2.5px;
+}
+
+.seat-selected {
+  float: left;
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  color: white;
+  border-radius: 2.5px;
+}
+
+.seat-occupied {
+  float: left;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  color: white;
+  border-radius: 2.5px;
+}
+.seat-occupied:hover {
+  cursor: default !important;
+}
+
+.preferred-seating {
+  float: left;
+  background-color: #1971b6;
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+  color: white;
+  border-radius: 2.5px;
+}
+
+.preferred-seating:hover {
+  background-color: green;
+  color: white;
+}
+
+#seat-container {
+  margin: auto;
+  width: 15%;
+}
+#seat-container .screen {
+  width: 100%;
+  height: 130px;
+  background-color: white;
+  transform: rotateX(-45deg);
+  box-shadow: 0px 3px 10px white;
+  padding-top: 20%;
+  font-size: 12pt;
+  color: gray;
+}
+#seat-container .seat-row {
+  display: flex;
+  height: 30px;
+  width: 100%;
+}
+#seat-container .seat-row #priority-row {
+  color: #229dfc;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+#seat-container .seat-row .priority-icon {
+  height: 20px;
+  margin-top: 4px;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+#seat-container .seat-row .row-letter {
+  color: white;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+#seat-container .seat-row #row-seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+#seat-container .seat-row #row-seat:nth-of-type(7) {
+  margin-left: 18px;
+}
+#seat-container .seat-row #row-seat:hover {
+  cursor: pointer;
+}
+#seat-container .seat-row .seat:hover {
+  background-color: green;
+  color: white;
+}
+
+#text {
+  margin-top: 20px;
+  color: white;
+}
+
+.buttons-contianer {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.play-btn {
+  background-color: #0f79af;
+  margin: 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+.play-btn:hover {
+  background-color: #18b0fc;
+  cursor: pointer;
+}
+.play-btn .playText {
+  color: white;
+  font-size: 1.3rem;
+  float: right;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+#socialMedia {
+  display: flex;
+  padding: 3em;
+  align-items: center;
+  justify-content: center;
+  background-color: #282828;
+  color: white;
+}
+
+#footer-name {
+  margin-top: 20px;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#socialMedia a {
+  margin-left: 10px;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=style-movieTicket.css.map */

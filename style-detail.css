@@ -1,5 +1,6 @@
 body {
   background-color: #282828 !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 #navbar.navbar.navbar-expand-lg.navbar-light.bg-light {
@@ -44,12 +45,12 @@ button.navbar-toggler .navbar-toggler-icon {
   background-image: url("img/togglerIcon.png");
 }
 
-.carousel-slide {
-  background-color: black;
+#carousel-txt {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-#carousel-img {
-  overflow: hidden;
+#score-text {
+  font-size: 1.5rem;
 }
 
 .container-movie {
@@ -70,6 +71,7 @@ button.navbar-toggler .navbar-toggler-icon {
   transition: 0.5s;
 }
 .container-movie .col .img {
+  width: 13rem;
   height: 20rem;
 }
 
@@ -113,6 +115,10 @@ button.navbar-toggler .navbar-toggler-icon {
   text-decoration: none;
 }
 
+#backdrop {
+  width: 100%;
+}
+
 #title {
   margin-top: 3rem;
   color: white;
@@ -120,14 +126,6 @@ button.navbar-toggler .navbar-toggler-icon {
 
 .container .col {
   width: 160%;
-}
-.container .col-poster {
-  text-align: center;
-  background-color: gray;
-  border-radius: 2px;
-  margin: 0.15rem;
-  width: 100%;
-  height: 20rem;
 }
 
 .details {
@@ -222,6 +220,12 @@ button.navbar-toggler .navbar-toggler-icon {
   color: white;
 }
 
+.youtube {
+  margin: 2rem 0px;
+  width: 100%;
+  height: 45rem;
+}
+
 .related {
   display: flex;
   margin: 15px;
@@ -235,6 +239,16 @@ button.navbar-toggler .navbar-toggler-icon {
 }
 .related .col-related:hover {
   background-color: green;
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+.similarIMG {
+  margin: 1rem;
+  width: 13rem;
+  height: 20rem;
+}
+.similarIMG:hover {
   transform: scale(1.5);
   transition: 0.5s;
 }

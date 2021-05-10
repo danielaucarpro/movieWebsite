@@ -1,3 +1,8 @@
+const searchBtn = document.getElementById('link-btn');
+const searchInput = document.getElementById('search');
+let value = searchInput.innerText;
+console.log(value);
+
 //SEARCH
 const multiSearch = (value) => {
     // console.log('Getting the movie genres ');
@@ -19,8 +24,9 @@ const multiSearch = (value) => {
                 //for each movie poster in data, send poster path to showActionMovies function
                 for (i = 0; i < 14; i++) {
                     // console.log("Hello!");
-                    // let poster = data[0].results[i].poster_path;
+                    let poster = data[0].results[i].poster_path;
                     let id = data[0].results[i].id
+                    showMultiSearch(poster, id);
                     addIDToURL(id);
                 }
             })
@@ -30,18 +36,31 @@ const multiSearch = (value) => {
         })
 }
 
-// const showMultiSearch = (poster, id) => {
-//     //append a link which contains a image with the poster link
-//     // console.log("Hello! Stay a while and listen!");
-//     searchResult.innerHTML += `<a href="./detail.html" class="col" id="${id}">` +
-//         `<img class="img" src="https://image.tmdb.org/t/p/w500${poster}" alt="" srcset=""></img>` +
-//         `</a>`;
+//ADD A EVENT LISTENER
+
+searchBtn.addEventListener('click', function () {
+    console.log(searchInput.innerText);
+    searchInput.innerText = value;
+    console.log(value);
+    multiSearch(value);
+    // document.body.innerHTML = '';
+});
+
+//TRIGGER MULTISEARCH FETCH WITH EVENT LISTENER AND PASS INNER TEXT AS A VALUE
+// const triggerSearch = () => {
+//     let value = searchBtn.innerText;
+//     console.log(value);
+//     multiSearch(value);
+//     document.body.innerHTML = '';
 // }
 
-// function searchMovie(value) {
-//     value = newValue;
-//     multiSearch(newValue);
-// }
+const showMultiSearch = (poster, id) => {
+    //append a link which contains a image with the poster link
+    // console.log("Hello! Stay a while and listen!");
+    document.body.innerHTML += `<a onclick= "addIDToURL(${id})" href="#" class="col" id="${id}">` +
+        `<img class="img" src="https://image.tmdb.org/t/p/w500${poster}" alt="" srcset=""></img>` +
+        `</a>`;
+}
 
 function addIDToURL(id) {
     // `./index.html?movieId=${id}`;

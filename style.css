@@ -1,5 +1,6 @@
 body {
   background-color: #282828 !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 #navbar.navbar.navbar-expand-lg.navbar-light.bg-light {
@@ -44,8 +45,12 @@ button.navbar-toggler .navbar-toggler-icon {
   background-image: url("img/togglerIcon.png");
 }
 
-.carousel-slide {
-  background-color: black;
+#carousel-txt {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#score-text {
+  font-size: 1.5rem;
 }
 
 .container-movie {
@@ -66,6 +71,7 @@ button.navbar-toggler .navbar-toggler-icon {
   transition: 0.5s;
 }
 .container-movie .col .img {
+  width: 13rem;
   height: 20rem;
 }
 

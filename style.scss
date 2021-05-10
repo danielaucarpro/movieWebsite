@@ -1,5 +1,6 @@
 body {
     background-color: #282828 !important;
+    font-family: "Roboto", sans-serif !important;
 }
 
 #navbar.navbar.navbar-expand-lg.navbar-light.bg-light {
@@ -30,10 +31,10 @@ input.form-control.me-2 {
         background-color: white !important;
         color: black !important;
     }
-    a{
+    a {
         color: white !important;
         text-decoration: none;
-        &:hover{
+        &:hover {
             color: black !important;
         }
     }
@@ -46,8 +47,12 @@ button.navbar-toggler {
     }
 }
 
-.carousel-slide {
-    background-color: black;
+#carousel-txt {
+    background-color: rgba(0, 0, 0, 0.5) ;
+}
+
+#score-text{
+    font-size: 1.5rem;
 }
 
 .container-movie {
@@ -68,7 +73,8 @@ button.navbar-toggler {
             transform: scale(1.5);
             transition: 0.5s;
         }
-        .img{
+        .img {
+            width: 13rem;
             height: 20rem;
         }
     }
@@ -86,7 +92,7 @@ button.navbar-toggler {
     height: 20px;
 }
 
-#action{
+#action {
     color: white;
 }
 

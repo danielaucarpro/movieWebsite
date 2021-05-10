@@ -1,0 +1,240 @@
+@import "./style";
+
+body {
+    text-align: center;
+    font-family: "Roboto", sans-serif !important;
+    background-color: #19191b;
+}
+
+//SELECTING MOVIE
+#choose-movie {
+    //center the content
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    #choose-text {
+        font-size: 16pt;
+        color: white;
+    }
+}
+
+#movie-container {
+    text-align: center;
+}
+
+#movie {
+    // background-color: #ffff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 12pt;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    appearance: none;
+    .poster {
+        width: 13rem;
+        height: 20rem;
+    }
+    .movieTitle {
+        color: white;
+        margin-bottom: 0.1rem;
+    }
+}
+
+.text-movie {
+    margin-left: 1rem;
+    .runtime {
+        font-size: 1.05rem;
+        color: #8197a2;
+    }
+    .overview {
+        margin: 0rem 30rem;
+        font-size: 1.3rem;
+        color: white;
+    }
+}
+
+//LEGEND
+#legend {
+    margin-top: 20px;
+    margin-right: 50px;
+    display: inline-block;
+    justify-content: space-between;
+    li {
+        margin: 1rem;
+        display: inline-block;
+        list-style: none;
+        .text-legend {
+            color: #8197a2;
+            margin-left: 5px;
+        }
+    }
+}
+
+//SEATS CLASSES
+.seat {
+    float: left;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    padding: auto;
+    border-radius: 2.5px;
+}
+
+.seat-selected {
+    float: left;
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    color: white;
+    border-radius: 2.5px;
+}
+
+.seat-occupied {
+    float: left;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    color: white;
+    border-radius: 2.5px;
+    &:hover {
+        cursor: default !important;
+    }
+}
+
+.preferred-seating {
+    float: left;
+    background-color: #1971b6;
+    height: 20px;
+    width: 20px;
+    margin: 3px;
+    color: white;
+    border-radius: 2.5px;
+}
+
+.preferred-seating:hover {
+    background-color: green;
+    color: white;
+}
+
+//CINEMA ROWS AND SEATS
+#seat-container {
+    margin: auto;
+    width: 15%;
+
+    //SCREEN
+    .screen {
+        width: 100%;
+        height: 130px;
+        background-color: white;
+        transform: rotateX(-45deg);
+        box-shadow: 0px 3px 10px white;
+        padding-top: 20%;
+        font-size: 12pt;
+        color: gray;
+    }
+
+    .seat-row {
+        display: flex;
+        height: 30px;
+        width: 100%;
+
+        //PRIORITY ROW
+        #priority-row {
+            color: #229dfc;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+
+        //PRIORITY ICON
+        .priority-icon {
+            height: 20px;
+            margin-top: 4px;
+            margin-left: 5px;
+            padding-left: 5px;
+        }
+
+        //NORMAL ROW LETTER
+        .row-letter {
+            color: white;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+
+        //SEAT NUMBER 2
+        #row-seat:nth-of-type(2) {
+            margin-right: 18px;
+        }
+
+        //SEAT NUMBER 7
+        #row-seat:nth-of-type(7) {
+            margin-left: 18px;
+        }
+
+        #row-seat:hover {
+            cursor: pointer;
+        }
+
+        .seat:hover {
+            background-color: green;
+            color: white;
+        }
+    }
+}
+
+#text {
+    margin-top: 20px;
+    color: white;
+}
+
+.buttons-contianer {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.play-btn {
+    background-color: #0f79af;
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    &:hover {
+        background-color: #18b0fc;
+        cursor: pointer;
+    }
+    .playText {
+        color: white;
+        // margin-left: 1rem;
+        font-size: 1.3rem;
+        float: right;
+        margin: 0;
+        padding: 0.5rem;
+    }
+}
+
+//FOOTER
+
+#socialMedia {
+    display: flex;
+    padding: 3em;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+    color: white;
+}
+
+#footer-name {
+    margin-top: 20px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#socialMedia a {
+    margin-left: 10px;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+}
